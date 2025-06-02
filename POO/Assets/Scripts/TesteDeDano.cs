@@ -9,12 +9,12 @@ public class TesteDeDano : MonoBehaviour
     {
         if (colisao.gameObject.CompareTag("Ataque"))
         {
-           int energia_atual = personagem.Energia() 
-                               - colisao.gameObject.GetComponent<Ataque>().AtaqueDoInimigo();
+            int energia_atual = personagem.Energia() 
+                                - colisao.gameObject.GetComponent<Ataque>().AtaqueDoInimigo();
            
-           personagem.AtribuirEnergia(energia_atual);
+            personagem.AtribuirEnergia(energia_atual);
            
-           Debug.Log("O personagem " +personagem.Nome()+" tem agora "+personagem.Energia());
+            Debug.Log("O personagem " +personagem.Nome()+" tem agora "+personagem.Energia());
         }
     }
 
