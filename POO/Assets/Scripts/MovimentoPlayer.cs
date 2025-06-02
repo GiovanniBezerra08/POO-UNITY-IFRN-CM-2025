@@ -5,10 +5,12 @@ public class MovimentoPlayer : MonoBehaviour
     private Rigidbody _rigidbody; 
     
     private float velocidade;
+    
      void Start()
      {
          velocidade = gameObject.GetComponent<Personagem>().Velocidade();
         _rigidbody = GetComponent<Rigidbody>();
+        
     }
     void Update()
     {
